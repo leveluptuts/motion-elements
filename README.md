@@ -1,6 +1,6 @@
-# @leveluptuts/drop-in
+# @leveluptuts/motion-elements
 
-# Drop In
+# Motion Elements
 
 ![Mr Wave On ](https://media3.giphy.com/media/JfitEsaTduKME/giphy.gif?cid=790b761122f3c5cd6b97584b994b9277159214ab2fea8be7&rid=giphy.gif)
 
