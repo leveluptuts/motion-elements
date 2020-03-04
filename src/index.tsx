@@ -3,14 +3,14 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type AProps = {
-  isToggled: boolean;
+  isToggled?: boolean;
   useButton?: boolean;
 };
 
 export const Accordion: React.FC<AProps> = ({
   children,
   useButton = true,
-  isToggled,
+  isToggled = true,
   ...rest
 }) => {
   const [intIsToggled, setIntIsToggled] = useState(isToggled);

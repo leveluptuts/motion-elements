@@ -39,7 +39,7 @@ const App = () => {
           <Prism language="jsx" style={theme}>
             {code}
           </Prism>
-          <Accordion isToggled={isToggled}>
+          <Accordion>
             <p>Another example</p>
           </Accordion>
 
