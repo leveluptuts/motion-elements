@@ -5,19 +5,23 @@ import { motion, AnimatePresence } from 'framer-motion';
 type AProps = {
   isToggled?: boolean;
   useButton?: boolean;
+  buttonText?: string;
 };
 
 export const Accordion: React.FC<AProps> = ({
   children,
   useButton = true,
   isToggled = true,
+  buttonText = 'Toggle',
   ...rest
 }) => {
   const [intIsToggled, setIntIsToggled] = useState(isToggled);
   return (
     <>
       {useButton && (
-        <button onClick={() => setIntIsToggled(prev => !prev)}>Toggle</button>
+        <button onClick={() => setIntIsToggled(prev => !prev)}>
+          {buttonText}
+        </button>
       )}
       <AccordionChild
         isToggled={useButton ? intIsToggled : isToggled}
